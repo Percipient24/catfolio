@@ -1,0 +1,41 @@
+
+@import './_variables';
+
+@import './FilterButtons';
+@import './FilterButton';
+
+@import './Pieces';
+@import './Piece';
+
+@import './LightBox';
+
+@import './Header';
+@import './Footer';
+
+html,
+body {
+	background-color: #111;
+	font-size: 14px;
+	color: $color-text;
+}
+
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	color: $white;
+}
+
+p {
+	margin: 0 0 20px;
+	padding: 0;
+	line-height: 20px;
+}
+
+a {
+	color: $color-text;
+	&:hover {
+		color: #bada55;
+	}
+}

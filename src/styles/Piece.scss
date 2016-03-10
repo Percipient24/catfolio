@@ -1,0 +1,24 @@
+.piece {
+  position: absolute;
+  background-color: $color-piece;
+  transition: width 0.3s ease-in-out;
+  transition-property: width, height, transform;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+  transition-property: -webkit-filter, filter;
+  cursor: pointer;
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+.piece__name {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

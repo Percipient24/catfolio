@@ -1,2 +1,0 @@
-# catfolio
-Cathy's Portfolio

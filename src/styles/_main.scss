@@ -1,4 +1,4 @@
-
+@import './_icons';
 @import './_variables';
 
 @import './FilterButtons';
@@ -25,6 +25,11 @@ h2 {
 	padding: 0;
 	line-height: 40px;
 	color: $white;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 p {

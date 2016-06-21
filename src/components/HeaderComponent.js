@@ -2,11 +2,59 @@
 
 import React from 'react';
 
+const links = [
+  {
+    url: 'http://twitter.com/razcat',
+    alt: 'Twitter',
+    className: 'i-twitter',
+  },
+  {
+    url: 'http://razcat.tumblr.com/',
+    alt: 'tumblr.',
+    className: 'i-tumblr',
+  },
+  {
+    url: 'http://www.facebook.com/catrazcat',
+    alt: 'facebook',
+    className: 'i-facebook',
+  },
+  {
+    url: 'http://catrazcat.deviantart.com/',
+    alt: 'DeviantArt',
+    className: 'i-deviant-art',
+  },
+  {
+    url: 'http://www.instagram.com/razcat/',
+    alt: 'instagram',
+    className: 'i-instagram',
+  },
+  {
+    url: 'http://www.redbubble.com/people/razcat',
+    alt: 'Redbubble',
+    className: 'i-redbubble',
+  },
+  {
+    url: 'https://www.etsy.com/shop/Razcat',
+    alt: 'Etsy',
+    className: 'i-etsy',
+  },
+];
+
 class HeaderComponent extends React.Component {
   render() {
     return (
       <div className="header">
       <img className="header__cat" src="http://www.razcat.com/Razcat.net%20_%20About_files/aboutPIC.jpg" alt="My face." text="My face."/>
+      <ul className="header__links">
+        {
+          links.map((link, n) => <li className="header__link">
+            <a href={link.url} title={link.alt}>
+              <i className={`icon ${link.className}`} />
+            </a>
+          </li>)
+          
+        }
+      </ul>
       <div className="header__text">
         <h1>Cathy Razim</h1>
 		<p>Hi -- My name is Cat and I am a New Media Designer and Illustrator currently living on Long Island NY.</p>

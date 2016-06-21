@@ -11,6 +11,25 @@
 	margin: 0 20px 20px 0;
 }
 
+.header__links {
+	clear: left;
+	float: left;
+	list-style: none;
+	text-align: center;
+	width: 50%;
+	max-width: 400px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.header__link {
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+	width: 30px;
+}
+
 .header__text {
 	overflow: auto;
 }
@@ -29,5 +48,12 @@
 	}
 	.header__cat {
 		float: none;
+		margin-right: 0;
+	}
+	.header__links {
+		clear: none;
+		float: none;
+		width: 100%;
+		max-width: none;
 	}
 }
